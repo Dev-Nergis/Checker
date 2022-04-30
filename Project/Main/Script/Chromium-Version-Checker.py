@@ -10,4 +10,4 @@ if r.status_code == 200:
     v_json = json.dumps(version_data, ensure_ascii=False, indent=4)
     v_json_data = json.loads(v_json)
     chrome_version = str(v_json_data['MAJOR']) + "." + str(v_json_data['MINOR']) + "." + str(v_json_data['BUILD']) + "." + str(v_json_data['PATCH'])
-    print(chrome_version)
+    print(f"크로미움 최신버전: {chrome_version}")
